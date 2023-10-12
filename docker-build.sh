@@ -1,6 +1,5 @@
 #!/bin/bash
-
-source env.sh
+DOCKER_IMAGE_TAG="invsombsp-yocto"
 
 usage() {
     echo -e "\e[3m\nUsage: $0 [path_to_Dockerfile]\e[0m\n"

@@ -1,15 +1,12 @@
 #!/bin/bash
-source env.sh
 
 # build with yocto-build.sh use command below
 # ./docker-run.sh /home/share/yocto-build.sh
-
-WORKING_DIR="/home/tevfik/opt/yocto"
+DOCKER_IMAGE_TAG="invsombsp-yocto"
 USER=$(whoami)
+WORKING_DIR="/home/"$USER"/opt/yocto"
 
 sudo install -o $(id -u) -g $(id -g) -d $WORKING_DIR
-#cd $WORKING_DIR
-#pwd
 
 docker run -it --rm \
     -v $(pwd):/home/share \
