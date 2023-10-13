@@ -1,13 +1,13 @@
 #!/bin/bash
 # This script will run into container
 
-MACHINE="imx8mminvsom"
+MACHINE="imx8mpevk"
 DISTRO="fsl-imx-xwayland"
-IMAGES="inv-som-imx-image"
+IMAGES="imx-image-core"
 
-REMOTE="https://bitbucket.org/inventronsom/invsom"
-BRANCH="zeus"
-MANIFEST="invsom-bsp.xml"
+REMOTE="https://github.com/nxp-imx/imx-manifest"
+BRANCH="imx-linux-mickledore"
+MANIFEST="imx-6.1.36-2.1.0.xml"
 
 # Init
 
